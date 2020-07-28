@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using StudentAgenda.Areas.Appointment.Models;
 
 namespace StudentAgenda.Areas.Appointment.Controllers
 {
     [Area("Appointment")]
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AppointmentController : ControllerBase
+    public class AppointmentController : Controller
     {
         private readonly AgendaContext _context;
         public AppointmentController(AgendaContext context)

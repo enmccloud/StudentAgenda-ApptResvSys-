@@ -34,16 +34,16 @@
                             <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Areas/Appointment/Views/AgendaLayout.cshtml">Agenda</a>
+                            <a class="nav-link" asp-area="Appointment" asp-controller="Home" asp-action="Index">Agenda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Class/Index">Classes</a>
+                            <a class="nav-link" asp-area="Class" asp-controller="Home" asp-action="Index">Classes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Teacher/Index">Teachers</a>
+                            <a class="nav-link" asp-area="Teacher" asp-controller="Home" asp-action="Index">Teachers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/GroupMember/Index">Group Members</a>
+                            <a class="nav-link" asp-area="GroupMember" asp-controller="Home" asp-action="Index">Group Members</a>
                         </li>
                         <partial name="_LoginPartial" />
                     </ul>
