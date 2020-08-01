@@ -1,0 +1,25 @@
+﻿@model AgendaAppointment
+@{
+    ViewData["Title"] = "DMACC Student Calendar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!doctype html>
+<html>
+<head>
+    <title>INDEX</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <h1>DMACC Student Agenda Calendar</h1>
+        <div class="content">
+            <div class="nav-item">
+                <a asp-area="Appointment" asp-controller="Home" asp-action="Scheduler" a>Access Calendar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
